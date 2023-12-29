@@ -1,0 +1,59 @@
+import {LineEdit, HorizontalBox, Button, VerticalBox, GroupBox} from "std-widgets.slint";
+
+export global Logic {
+    pure callback divide-income(string);
+}
+
+export component AppWindow inherits Window {
+    
+    width: 600px;
+        in-out property <string> results: "";
+
+        Rectangle {
+            background: #313e50;
+            VerticalBox {
+                padding-bottom: 100px;
+                padding-top: 100px;
+                padding-left: 150px;
+                padding-right: 150px;
+                Text {
+                    horizontal-alignment: center;
+                    text: "Enter total income";
+                    font-size: 26px;
+                }
+                HorizontalLayout {
+                    alignment: center;
+                    padding-top: 5px;
+                    input := LineEdit {
+                        horizontal-alignment: center;
+                        width: 250px;
+                        height: 40px;
+                        placeholder-text: "Total income";
+                        font-size: 18px;
+                    }
+                }
+                HorizontalLayout {
+                    alignment: center;
+                    button := Button {
+                        primary: true;
+                        text: "Calculate";
+                        width: 250px;
+                        height: 40px;
+                        clicked => {Logic.divide-income(input.text)}
+                    }
+                }
+                
+                if root.results != "" : res := VerticalBox {
+                    GroupBox {
+                        Text {
+                            horizontal-alignment: center;
+                            font-size: 18px;
+                            text: {
+                                root.results;
+                            }
+                        }
+                    }
+                }                
+            }
+        }
+}
