@@ -1,7 +1,7 @@
 [package]
 name = "incomedivider-desktop"
 version = "0.1.0"
-authors = ["Travis Rodgers <travisdotmedia@gmail.com>"]
+authors = ["Travis Rodgers <travis@travis.media>"]
 edition = "2021"
 build = "build.rs"
 
