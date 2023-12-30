@@ -6,7 +6,7 @@ Change the percentages to whatever business model you have.
 
 Defaults are:
 
-- Tax percentage: 30 % <!-- this is theft -->
+- Tax percentage: 30%
 - Owner percentage: 55%
 - Profit percentage: 5%
 - Operating expenses percentage: 10%
