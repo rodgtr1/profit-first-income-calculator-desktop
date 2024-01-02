@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Travis Rodgers <travis@travis.media>"]
 edition = "2021"
 build = "build.rs"
+description = "Diving up income into tax, owner, profit, and opex amounts."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -12,3 +13,9 @@ slint = "1.0"
 
 [build-dependencies]
 slint-build = "1.0"
+
+[package.metadata.bundle]
+name = "Income Divider"
+identifier = "io.github.rodgtr1.profit-first-income-calculator-desktop"
+description = "Diving up income into tax, owner, profit, and opex amounts."
+icon = ["./icon.png", "./icon@2x.png"]
