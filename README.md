@@ -1,5 +1,7 @@
 # Profit First Income Calculator Desktop
 
+**NOTE: A new Tauri Desktop [version of this app](https://github.com/rodgtr1/profit-first-income-calculator-tauri) is available also.**
+
 A Rust desktop application using the Slint UI framework for calculating profit allocation based on the Profit First methodology. The app divides income into four categories: Taxes (30%), Owner pay (55%), Profit (5%), and Operating expenses (10%).
 
 ## About
